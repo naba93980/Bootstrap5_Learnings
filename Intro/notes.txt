@@ -1,0 +1,3 @@
+Bootstrap = Grid system(for responsiveness) + (classes + components)(for design and time saving)
+
+For customizing design we gotta write css code all by ourselves, we can only use the inbuilt grid system of bootstrap for responsiveness
