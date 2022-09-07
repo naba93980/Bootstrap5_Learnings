@@ -3,11 +3,24 @@ Grid System consists of -
 1. breakpoint - X-small, Small (sm), Medium (md), Large (lg), Extra Large (xl), Extra extra Large (xxl)
 2. container - Wrapper that contains the website -  website width depends on the wrapper width
 3. row - always inside container (divivded in 12 equal strips) or column
-4. column - always inside row 
+4. column - always inside row ...all contents should be inside column
 
+
+Bootstrap flow :
+
+container > row > column > content (text and images)
 
 Bootstrap comes with three different containers:
 
 .container, which sets a max-width at each responsive breakpoint (100% for 576px).
 .container-fluid, which is width: 100% at all breakpoints.
 .container-{breakpoint}, which is width: 100% until the specified breakpoint.
+
+
+Breakpoint	            Class infix	    Dimensions
+X-Small	                    None	      <576px
+Small	                    sm	          ≥576px
+Medium	                    md	          ≥768px
+Large	                    lg	          ≥992px
+Extra large	                xl	          ≥1200px
+Extra extra large	        xxl	          ≥1400px
