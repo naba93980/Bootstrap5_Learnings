@@ -27,3 +27,7 @@ justify-self-center
 justify-self-start
 
 
+below breakpoint, 'col-{breakpoint}-n' is converted into 'col-12', 
+if there doesnot exist any col-n mentioned in row div
+
+
