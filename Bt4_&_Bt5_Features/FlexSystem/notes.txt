@@ -1,0 +1,29 @@
+for vertical alignment : 
+
+put in row div :    
+row-cols-2        
+align-items-start
+align-items-center
+align-items-end
+
+
+put in col div (overrides one in row div) :
+align-self-start
+align-self-center
+align-self-end
+col
+
+
+for horizontal alignment : 
+
+put in row div :
+justify-content-around
+justify-content-between
+justify-content-center
+
+put in col div (DOES NOT overrides one in row div) :
+justify-self-end
+justify-self-center
+justify-self-start
+
+

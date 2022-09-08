@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>FlexBasedColumnClasses</title>
+  </head>
+  <body>
+    <div class="container-fluid h-100 bg-warning">
+      <!---------------------------------------------------------------------------------------------------------->
+
+      <div
+        class="row align-items-center"
+        style="height: 200px; background-color: rgb(245, 85, 112)"
+      >
+        <div class="col bg-primary">div1</div>
+        <!-- similar to display:flex -->
+
+        <div class="col-5 bg-info">div2</div>
+        <!-- just as bootstraps normal grid system -->
+
+        <div class="col-sm-auto bg-secondary">this is div4</div>
+        <!-- above 576px auto, below 576 takes all 12 cols -->
+
+        <div class="col-auto bg-primary">this is div3</div>
+        <!-- always auto -->
+      </div>
+      <br /><br />
+
+      <!--------------------------------------------------------------------------------------------------------- -->
+
+      <div class="row row-cols-2" style="background-color: rgb(236, 80, 106)">
+        <div class="col bg-primary">div1</div>
+        <!-- since row-cols-2, so div1 takes 50% of width as col without no. are divided equally -->
+
+        <div class="col-5 bg-info">div2</div>
+
+        <div class="col-sm-auto bg-secondary">this is div3</div>
+        <!-- below 576px takes 50% that is 6 cols as row-cols-2 -->
+
+        <div class="col-auto bg-primary">this is div4</div>
+      </div>
+      <br /><br />
+
+      <!-------------------------------------------------------------------------------------------------------- -->
+
+      <div
+        class="row row-cols-auto"
+        style="background-color: rgb(235, 86, 111)"
+      >
+        <div class="col bg-primary">div1</div>
+
+        <div class="col-5 bg-info">div2</div>
+        <!-- overrides auto of row and takes 5 cols -->
+
+        <div class="col-sm-auto bg-secondary">this is div3</div>
+        <div class="col-auto bg-primary">this is div4</div>
+      </div>
+      <br /><br />
+
+      <!--------------------------------------Vertical alignment---------------------------------------------- -->
+
+      <div
+        class="row align-items-center"
+        style="height: 200px; background-color: rgb(235, 86, 111)"
+      >
+        <div class="col bg-primary align-self-start">div1</div>
+        <div class="col-5 bg-info align-self-center">div2</div>
+
+        <div class="col-sm-auto bg-secondary align-self-end">this is div3</div>
+        <!-- individual column's align-self-*  overrides row's align-items-* -->
+
+        <div class="col-auto bg-primary">this is div4</div>
+      </div>
+      <br /><br />
+
+      <!-------------------------------------Horizontal alignment-------------------------------------------------- -->
+
+      <div
+        class="row justify-content-center"
+        style="height: 200px; background-color: rgb(235, 86, 111)"
+      >
+        <div class="col-3 justify-self-end bg-primary">div1</div>
+        <!-- individual column's justify-self-* doesnot overrides -->
+
+        <div class="col-3 bg-info">div2</div>
+      </div>
+
+      <!-------------------------------------------------------------------------------------------------------- -->
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
